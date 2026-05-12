@@ -1,0 +1,184 @@
+/* Storyling — app shell */
+
+.sl-shell {
+  min-height: 100vh;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Floating header ── */
+.sl-header {
+  position: sticky;
+  top: 16px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  padding: 0 16px;
+  pointer-events: none;
+}
+
+.sl-header-capsule {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 252, 245, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--paper-300);
+  border-radius: var(--radius-pill);
+  padding: 8px 16px 8px 12px;
+  box-shadow: var(--shadow-sm);
+  width: 100%;
+  max-width: 720px;
+  pointer-events: all;
+}
+
+.sl-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--ink-700);
+}
+
+.sl-brand-name {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink-700);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+/* ── Main content ── */
+.sl-main {
+  flex: 1;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  box-sizing: border-box;
+  animation: sl-fadein var(--dur-slow) var(--ease-out);
+}
+
+.sl-main--wide {
+  max-width: 980px;
+}
+
+/* ── Footer ── */
+.sl-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 16px;
+  flex-wrap: wrap;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--ink-400);
+  background: var(--paper-200);
+}
+
+.sl-footer a {
+  color: var(--ink-400);
+  text-decoration: none;
+  transition: color var(--dur-fast) var(--ease-out);
+}
+
+.sl-footer a:hover { color: var(--ink-700); }
+
+/* ── Shared screen layout ── */
+.sl-screen {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sl-kicker {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cobalt-400);
+}
+
+.sl-h1 {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 5vw, 44px);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: var(--ink-700);
+  font-weight: 700;
+}
+
+.sl-lede {
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--ink-400);
+  max-width: 54ch;
+}
+
+/* ── Buttons ── */
+.sl-btn {
+  font-family: var(--font-body);
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all var(--dur-fast) var(--ease-out);
+  text-decoration: none;
+}
+
+.sl-btn--primary {
+  background: var(--cobalt-400);
+  color: #fff;
+  font-size: 15px;
+  padding: 12px 24px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 8px rgba(42, 77, 189, 0.30);
+}
+.sl-btn--primary:hover:not(:disabled) {
+  background: var(--cobalt-500);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(42, 77, 189, 0.32);
+}
+.sl-btn--primary:active:not(:disabled) {
+  transform: translateY(0) scale(0.98);
+  background: var(--cobalt-600);
+  box-shadow: var(--shadow-inset);
+}
+.sl-btn--primary:disabled { opacity: 0.45; cursor: not-allowed; }
+
+.sl-btn--ghost {
+  background: transparent;
+  color: var(--ink-600);
+  font-size: 14px;
+  padding: 10px 18px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--paper-400);
+}
+.sl-btn--ghost:hover { background: var(--paper-200); border-color: var(--ink-200); }
+
+.sl-btn--secondary {
+  background: var(--paper-200);
+  color: var(--ink-700);
+  font-size: 14px;
+  padding: 10px 18px;
+  border-radius: var(--radius-md);
+}
+.sl-btn--secondary:hover { background: var(--paper-300); }
+
+/* ── Actions row ── */
+.sl-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}

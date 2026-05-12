@@ -1,0 +1,15 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" fill="none" aria-label="Storyling">
+  <g transform="translate(0 0)">
+    <path d="M11 24 C 11 13, 19 7, 32 7 C 47 7, 55 14, 55 26 C 55 38, 51 52, 38 56 C 27 59, 16 55, 12 45 C 9 38, 11 31, 11 24 Z" fill="#2A4DBD"></path>
+    <path d="M16 26 C 16 17, 22 12, 32 12 C 44 12, 50 18, 50 27 C 50 36, 47 47, 37 50 C 28 53, 20 50, 17 42 C 15 37, 16 31, 16 26 Z" fill="#F4ECD2"></path>
+    <path d="M21 36 L21 27 C 24 25, 28 25, 32 27 L 32 36 C 28 34, 24 34, 21 36 Z" fill="#1A2233"></path>
+    <path d="M43 36 L43 27 C 40 25, 36 25, 32 27 L 32 36 C 36 34, 40 34, 43 36 Z" fill="#1A2233"></path>
+    <line x1="32" y1="27" x2="32" y2="36" stroke="#F4ECD2" stroke-width="1.2" stroke-linecap="round"></line>
+    <path d="M32 17 L33.2 20.2 L36.4 21.4 L33.2 22.6 L32 25.8 L30.8 22.6 L27.6 21.4 L30.8 20.2 Z" fill="#F2C44E"></path>
+    <circle cx="20" cy="20" r="1.4" fill="#F2C44E"></circle>
+    <circle cx="45" cy="18" r="1.2" fill="#3F8F4F"></circle>
+    <circle cx="46" cy="40" r="1.6" fill="#7B4FB8"></circle>
+  </g>
+  <text x="72" y="46" font-family="&#39;Bricolage Grotesque&#39;, &#39;Schibsted Grotesk&#39;, &#39;Helvetica Neue&#39;, sans-serif" font-size="36" font-weight="700" fill="#1A2233" letter-spacing="-1.2">Storyling</text>
+</svg>

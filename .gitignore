@@ -1,0 +1,11 @@
+.env
+backend/venv/
+__pycache__/
+*.pyc
+backend/uploads/
+backend/audio/
+backend/jobs.db
+node_modules/
+dist/
+generate_plan.py
+*.docx
