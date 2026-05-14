@@ -127,14 +127,19 @@ async def _run_pipeline(
 ):
     pipeline_start = time.monotonic()
 
+    _MOTION_SUFFIX = (
+        ", camera gently pulling back to reveal the scene, "
+        "everything slowly coming to life from stillness, cinematic"
+    )
+
     if story_id == "custom":
-        video_prompt = custom_prompt
+        video_prompt = custom_prompt.strip().rstrip(".,") + _MOTION_SUFFIX
         if custom_script and custom_script.strip():
             narration_script = custom_script.strip()
             log(f"[JOB {job_id}] Using verbatim script ({len(narration_script)} chars)")
         else:
             log(f"[JOB {job_id}] Generating script via Ollama | tone={custom_tone!r}")
-            narration_script = await generate_narration_script(video_prompt, custom_tone or "", language)
+            narration_script = await generate_narration_script(video_prompt, custom_tone or "", language, duration)
             log(f"[JOB {job_id}] Script generated: {narration_script[:120]}")
     else:
         template = TEMPLATES[story_id]

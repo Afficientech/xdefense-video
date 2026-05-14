@@ -6,9 +6,10 @@ TEMPLATES = {
         "thumbnail_emoji": "🌲",
         "duration": 10,
         "prompt": (
-            "A young child exploring a magical enchanted forest, "
-            "golden sunlight through ancient trees, colorful butterflies, "
-            "friendly woodland animals, cinematic fairy tale atmosphere, "
+            "Camera gently pulls back from the child's face to reveal a magical enchanted forest, "
+            "ancient trees swaying, colorful butterflies fluttering into frame, "
+            "friendly woodland animals emerging from the undergrowth, scene slowly coming to life, "
+            "golden sunlight streaming through the canopy, cinematic fairy tale atmosphere, "
             "warm soft lighting, 4K cinematic"
         ),
         "script_en": (
@@ -35,10 +36,10 @@ TEMPLATES = {
         "thumbnail_emoji": "🚀",
         "duration": 10,
         "prompt": (
-            "A young child astronaut floating in outer space, "
-            "colorful galaxies and nebulas in background, shooting stars, "
-            "Earth visible below, cinematic sci-fi adventure, "
-            "heroic warm lighting, 4K cinematic"
+            "Camera drifts outward from the child astronaut's visor to reveal the vast cosmos, "
+            "stars and nebulas slowly rotating into view, shooting stars streaking past, "
+            "Earth glowing in the distance, the suit gently drifting, scene animating from stillness, "
+            "cinematic sci-fi adventure, heroic warm lighting, 4K cinematic"
         ),
         "script_en": (
             "3, 2, 1 — blast off! Our young astronaut soared beyond the clouds and into the glittering universe. "
@@ -64,9 +65,9 @@ TEMPLATES = {
         "thumbnail_emoji": "🌊",
         "duration": 10,
         "prompt": (
-            "A young child diving in a vibrant coral reef underwater, "
-            "colorful tropical fish swimming around, friendly sea turtle, "
-            "rays of sunlight piercing clear blue water, "
+            "Camera slowly zooms out from the child's face as bubbles rise and the coral reef comes to life, "
+            "colorful tropical fish swirling into frame, a friendly sea turtle gliding past, "
+            "rays of sunlight dancing through clear blue water, everything gently animated from stillness, "
             "magical underwater world, cinematic adventure, 4K cinematic"
         ),
         "script_en": (
